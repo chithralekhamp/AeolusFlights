@@ -1,0 +1,184 @@
+body {
+	
+  
+    background-image: url(A6.jpg);
+    
+    
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+        
+    }
+    
+    *{
+        font-family: sans-serif;
+        box-sizing: border-box;
+    }
+    
+    form {
+        width: 500px;
+        border: 2px solid #ccc;
+        padding: 30px;
+        background: #fff;
+        border-radius: 15px;
+    }
+    
+    h2 {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    
+    input {
+        display: block;
+        border: 2px solid #ccc;
+        width: 95%;
+        padding: 10px;
+        margin: 10px auto;
+        border-radius: 5px;
+    }
+    label {
+        color: #888;
+        font-size: 18px;
+        padding: 10px;
+    }
+    
+    button {
+        float: right;
+        background: #555;
+        padding: 10px 15px;
+        color: #fff;
+        border-radius: 5px;
+        margin-right: 10px;
+        border: none;
+    }
+    button:hover{
+        opacity: .7;
+    }
+    .error {
+       background: #F2DEDE;
+       color: #A94442;
+       padding: 10px;
+       width: 95%;
+       border-radius: 5px;
+       margin: 20px auto;
+    }
+    
+    .success {
+       background: #D4EDDA;
+       color: #40754C;
+       padding: 10px;
+       width: 95%;
+       border-radius: 5px;
+       margin: 20px auto;
+    }
+    
+    h1 {
+        text-align: center;
+        color: #fff;
+    }
+    
+    .ca {
+        font-size: 14px;
+        display: inline-block;
+        padding: 10px;
+        text-decoration: none;
+        color: #444;
+    }
+    .ca:hover {
+        text-decoration: underline;
+    } 
+    
+    
+    
+    /* CSS logout button  */
+    .logout {
+        align-items: center;
+        appearance: none;
+        background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+        border: 0;
+        border-radius: 6px;
+        box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+        box-sizing: border-box;
+        color: #fff;
+        cursor: pointer;
+        display: inline-flex;
+        font-family: "JetBrains Mono",monospace;
+        height: 48px;
+        justify-content: center;
+        line-height: 1;
+        list-style: none;
+        overflow: hidden;
+        padding-left: 16px;
+        padding-right: 16px;
+        position: relative;
+        text-align: left;
+        text-decoration: none;
+        transition: box-shadow .15s,transform .15s;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        white-space: nowrap;
+        will-change: box-shadow,transform;
+        font-size: 18px;
+      }
+      
+      .logout {
+        box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+      }
+      
+      .logout:hover {
+        box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+        transform: translateY(-2px);
+      }
+      
+      .logout:active {
+        box-shadow: #3c4fe0 0 3px 7px inset;
+        transform: translateY(2px);
+      }
+    
+    
+      .scroll-down {
+        height: 300px;	
+        overflow: hidden;
+        position: relative;
+       }
+       .scroll-down .inner {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        line-height: 50px;
+        text-align: center;
+        /* Starting position */
+        -moz-transform:translateY(-100%);
+        -webkit-transform:translateY(-100%);	
+        transform:translateY(-100%);
+        /* Apply animation to this element */	
+        -moz-animation: scroll-down 15s linear infinite;
+        -webkit-animation: scroll-down 15s linear infinite;
+        animation: scroll-down 15s linear infinite;
+       }
+       /* Move it (define the animation) */
+       @-moz-keyframes scroll-down {
+        0%   { -moz-transform: translateY(-100%); }
+        100% { -moz-transform: translateY(100%); }
+       }
+       @-webkit-keyframes scroll-down {
+        0%   { -webkit-transform: translateY(-100%); }
+        100% { -webkit-transform: translateY(100%); }
+       }
+       @keyframes scroll-down {
+        0%   { 
+        -moz-transform: translateY(-100%); /* Browser bug fix */
+        -webkit-transform: translateY(-100%); /* Browser bug fix */
+        transform: translateY(-100%); 		
+        }
+        100% { 
+        -moz-transform: translateY(100%); /* Browser bug fix */
+        -webkit-transform: translateY(100%); /* Browser bug fix */
+        transform: translateY(100%); 
+        }
+       }
